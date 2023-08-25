@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+@layer base {
+  html {
+    @apply font-league;
+  }
+}
+@layer components {
+  .item {
+    @apply relative sm:static px-5 pt-6 pb-4 sm:py-4 flex flex-col sm:items-center sm:flex-row gap-4 sm:justify-between bg-white rounded-md;
+  }
+  .profile-icon {
+    @apply w-12 sm:w-16 absolute sm:static -top-[2rem] left-4;
+  }
+  .item-info {
+    @apply flex flex-col gap-2 after:border-[1px] sm:after:border-0;
+  }
+  .item-details{
+    @apply flex flex-col gap-2;
+  }
+  .item-header {
+    @apply flex flex-wrap gap-4 items-center;
+  }
+  .item-name {
+    @apply text-cyan-desaturated-dark font-bold;
+  }
+  .item-badges {
+    @apply flex gap-2;
+  }
+  .item-badge-new {
+    @apply bg-cyan-desaturated-dark font-bold px-2 py-1 rounded-full text-white text-sm;
+  }
+  .item-badge-featured {
+    @apply bg-cyan-very-dark-grayish font-bold px-2 py-1 rounded-full text-white text-sm;
+  }
+  .item-role {
+    @apply text-cyan-very-dark-grayish font-bold;
+  }
+  .item-desc {
+    @apply flex gap-6 list-disc text-sm text-cyan-dark-grayish;
+  }
+  .item-desc li {
+    @apply first-of-type:list-none;
+  }
+  .tags {
+    @apply flex flex-wrap gap-2;
+  }
+  .tag {
+    @apply p-2 font-bold h-fit rounded-md text-cyan-desaturated-dark bg-filter-tablets flex gap-4 hover:cursor-pointer;
+  }
+  .filter-tag{
+    @apply font-bold h-fit rounded-md overflow-hidden text-cyan-desaturated-dark bg-filter-tablets flex gap-4 items-center;
+  }
+  .filter-label{
+    @apply p-2;
+  }
+  .filter-close{
+    @apply p-3 bg-cyan-desaturated-dark hover:cursor-pointer;
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}

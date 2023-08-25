@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="./image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="output.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Job Listings</title>
+
+</head>
+
+<body>
+  <div class="h-screen flex flex-col bg-background">
+    <div class="header relative bg-cyan-desaturated-dark">
+      <picture>
+        <source media="(max-width:640px)" srcset="./images/bg-header-mobile.svg">
+        <source media="(min-width:641px)" srcset="./images/bg-header-desktop.svg">
+        <img src="images/bg-header-desktop.svg" class="w-full " alt="background-pattern">
+      </picture>
+
+      <div class="absolute -bottom-[25%] left-0 w-full px-4 lg:px-28 z-10 drop-shadow-md">
+        <div class="invisible filter-chips bg-white px-5 py-4 rounded-md tags">
+          <!-- <div class="filter-tag">
+            <p class="filter-label">Test</p>
+            <img src="images/icon-remove.svg" alt="close-icon" class="filter-close">
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container overflow-y-scroll no-scrollbar px-4 lg:px-28 pt-24 sm:pt-16 pb-12 flex flex-col gap-12">
+
+      <!-- <div class="item ">
+        <div class="item-info">
+          <img src="/images/photosnap.svg" alt="profile-image" class="profile-icon">
+          <div class="item-details">
+            <div class="item-header">
+              <div class="item-name">Photosnap</div>
+              <div class="item-badges">
+                <div class="item-badge-new">NEW!</div>
+                <div class="item-badge-featured">FEATURED</div>
+              </div>
+            </div>
+            <div class="item-role">Senior Frontend Developer</div>
+            <ul class="item-desc">
+              <li>1d ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <div class="tag">Frontend</div>
+          <div class="tag">Senior</div>
+          <div class="tag">HTML</div>
+          <div class="tag">CSS</div>
+          <div class="tag">Javascript</div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
