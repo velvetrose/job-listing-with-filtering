@@ -14,10 +14,10 @@
     @apply relative sm:static px-5 pt-6 pb-4 sm:py-4 flex flex-col sm:items-center sm:flex-row gap-4 sm:justify-between bg-white rounded-md;
   }
   .profile-icon {
-    @apply w-12 sm:w-16 absolute sm:static -top-[2rem] left-4;
+    @apply w-12 sm:w-16 sm:h-16 absolute sm:static -top-[2rem] left-4;
   }
   .item-info {
-    @apply flex flex-col gap-2 after:border-[1px] sm:after:border-0;
+    @apply flex flex-col sm:flex-row sm:items-center gap-2 after:border-[1px] sm:after:border-0;
   }
   .item-details{
     @apply flex flex-col gap-2;

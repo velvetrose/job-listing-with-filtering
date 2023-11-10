@@ -607,6 +607,7 @@ html {
 @media (min-width: 640px) {
   .profile-icon {
     position: static;
+    height: 4rem;
     width: 4rem;
   }
 }
@@ -623,6 +624,11 @@ html {
 }
 
 @media (min-width: 640px) {
+  .item-info {
+    flex-direction: row;
+    align-items: center;
+  }
+
   .item-info::after {
     content: var(--tw-content);
     border-width: 0px;
