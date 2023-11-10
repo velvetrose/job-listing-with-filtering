@@ -1,4 +1,4 @@
-const data = fetch("/data.json")
+const data = fetch("/job-listing-with-filtering/data.json")
   .then((response) => {
     return response.json();
   })
@@ -77,7 +77,7 @@ function filterRole(role) {
     );
   }
 
-  const data = fetch("/data.json")
+  const data = fetch("/job-listing-with-filtering/data.json")
     .then((response) => {
       return response.json();
     })
@@ -118,7 +118,7 @@ function addFilter(e) {
 
   console.log("Chip Values ", chipArray);
 
-  const data = fetch("/data.json")
+  const data = fetch("/job-listing-with-filtering/data.json")
     .then((response) => {
       return response.json();
     })
@@ -158,7 +158,7 @@ function closeFilter(e) {
 
   console.log(chipArray.length);
 
-  const data = fetch("/data.json")
+  const data = fetch("/job-listing-with-filtering/data.json")
     .then((response) => {
       return response.json();
     })
