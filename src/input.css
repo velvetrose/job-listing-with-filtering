@@ -38,7 +38,7 @@
     @apply bg-cyan-very-dark-grayish font-bold px-2 py-1 rounded-full text-white text-sm;
   }
   .item-role {
-    @apply text-cyan-very-dark-grayish font-bold;
+    @apply text-cyan-very-dark-grayish font-black hover:cursor-pointer hover:text-cyan-desaturated-dark;
   }
   .item-desc {
     @apply flex gap-6 list-disc text-sm text-cyan-dark-grayish;
@@ -50,7 +50,7 @@
     @apply flex flex-wrap gap-2;
   }
   .tag {
-    @apply p-2 font-bold h-fit rounded-md text-cyan-desaturated-dark bg-filter-tablets flex gap-4 hover:cursor-pointer;
+    @apply p-2 font-bold h-fit rounded-md text-cyan-desaturated-dark bg-filter-tablets flex gap-4 hover:cursor-pointer hover:bg-cyan-desaturated-dark hover:text-white;
   }
   .filter-tag{
     @apply font-bold h-fit rounded-md overflow-hidden text-cyan-desaturated-dark bg-filter-tablets flex gap-4 items-center;
@@ -59,7 +59,7 @@
     @apply p-2;
   }
   .filter-close{
-    @apply p-3 bg-cyan-desaturated-dark hover:cursor-pointer;
+    @apply p-3 bg-cyan-desaturated-dark hover:cursor-pointer hover:bg-cyan-very-dark-grayish;
   }
 }
 

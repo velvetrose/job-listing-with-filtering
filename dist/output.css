@@ -684,9 +684,15 @@ html {
 }
 
 .item-role {
-  font-weight: 700;
+  font-weight: 900;
   --tw-text-opacity: 1;
   color: hsl(180 14% 20% / var(--tw-text-opacity));
+}
+
+.item-role:hover {
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  color: hsl(180 29% 50% / var(--tw-text-opacity));
 }
 
 .item-desc {
@@ -725,6 +731,10 @@ html {
 
 .tag:hover {
   cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: hsl(180 29% 50% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .filter-tag {
@@ -754,6 +764,8 @@ html {
 
 .filter-close:hover {
   cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: hsl(180 14% 20% / var(--tw-bg-opacity));
 }
 
 .invisible {
